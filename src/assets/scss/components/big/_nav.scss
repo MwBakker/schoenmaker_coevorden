@@ -1,0 +1,204 @@
+//      navbar          //
+
+nav { 
+    width: 100%; height: 85px;
+    background-image: url('../../../src/assets/imgs/leatherBG3.jpg');
+    background-size: 100%, auto;
+    background-repeat: no-repeat;
+}
+
+#logo { 
+    height: 55px;
+}
+
+ul p { 
+    font-size: 14px;
+    color: white;
+}
+
+.no-padding p {
+    margin: 0; 
+    padding: 0.125em;
+}
+#mainUL { 
+    width: 100%;
+}
+
+ul,
+#mainUL {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    width: 145px;
+    float: left;
+    position: relative;
+    list-style: none;
+}
+
+.navli {
+    height: 85px; 
+    cursor: pointer;
+    width: 15.75%;
+}
+
+.li-el { 
+    height: 85px;
+    vertical-align: middle;
+}
+
+.navli,
+#quotes {
+    display: inline;
+    position: relative;
+    text-align: center;
+}
+
+#main-logo { 
+    width: 17.5%;
+    margin: 0 1% 0 2%;
+}
+
+#main-logo img {
+    margin: 16px 0;
+    height: 52px;
+}
+
+.navli-icon { 
+    height: 37px;
+    margin: 23px 0;
+}
+
+.sub-menu-item { 
+    overflow: hidden;
+}
+
+.navli-icon,
+.sub-menu-item img { 
+    border-style: none;
+}
+
+.sub-menu-item img { 
+    height: 20px;
+    float: left;
+    margin: 18px 11% 18px 5%;
+}
+
+.sub-menu-item p { 
+    width: 60%;
+    margin: 20px 0%;
+    float: left;
+}
+
+#quote-li { 
+    margin-right: 1%;
+}
+
+li li p,
+li li li p {
+    margin: 25px 9%;
+    text-shadow: 4px 4px black;
+}
+
+li li { 
+    display: inline;
+}
+
+ul ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-image: url('../../../src/assets/imgs/leatherBG3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-color: darkgrey;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: $box-shadow_1;
+}
+
+ul ul ul {
+    left: 99.25%;
+    top: 0;
+    background-image: url('../../../src/assets/imgs/leatherBG3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: $box-shadow_1;
+}
+
+li:hover > ul {
+    display: block;
+}
+
+#name-plate {
+    height: 26px;
+    margin-top: 5px;
+    padding-bottom: 3px;
+}
+
+#quotes {
+    display: none;
+    width: 24%;
+    max-height: 85px;
+    float: right; 
+    margin: 13px 2.5% 0 0;
+}
+
+#quotes p { 
+    font-size: 16px;
+    font-style: italic;
+    padding-top: 0;
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+}
+
+
+@media only screen and (min-width: 800px) {
+
+    nav { 
+        height: 100px;
+    }
+    .navli { 
+        margin: 15px 1% 0px 1%;
+        width: 10%;
+    }
+    li { 
+        width: 250px;
+    }
+    .navli-icon { 
+        height: 45px;
+        margin: 12px 0;
+    }    
+    .sub-menu-item img { 
+        height: 30px;
+        margin: 18px 11% 18px 5%;
+    }
+    .sub-menu-item p { 
+        font-size: 17px;
+    }
+    #main-logo img {
+        margin: 12px 0;
+        height: 65px;
+    }
+    #quotes {
+        display: block;
+    }
+    #main-logo {
+        width: 11.5%;
+        margin: 7px 0;
+    }    
+}
+
+@media only screen and (min-width: 1600px) 
+{
+    #quotes p { 
+        font-size: 18px;
+    }
+}

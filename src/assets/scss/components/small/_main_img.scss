@@ -1,0 +1,92 @@
+//      Variating image             //
+
+#home-img,
+#home-img-zoomed-in,
+#werkplaats-img,
+#onderhoud-sub-img,
+#onderhoud-img,
+#riemen-img,
+#sleutels-img,
+#reguliere_sleutels-img,
+#autosleutels-img,
+#naamplaten-img,
+#voetzolen-img,
+#info-img, { 
+    width: 100%; height: 0;
+    float: left;
+    padding-top: 66.64%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 1px 10px 0 rgba(0, 0, 0, 0.19)
+}
+
+#home-img,
+#home-img-zoomed-in {  
+    background-image: url('../../../src/assets/imgs/shopfront2.jpg'); 
+}
+#werkplaats-img {
+    background-image: url('../../../src/assets/imgs/workingspot2.jpg');
+}
+#onderhoud-sub-img {
+    background-image: url('../../../src/assets/imgs/workingspot2.jpg');
+}
+#onderhoud-img {
+    background-image: url('../../../src/assets/imgs/shoeCream.jpg');
+}
+#riemen-img { 
+    background-image: url('../../../src/assets/imgs/shopInside2.jpg');
+}
+#sleutels-img {
+    background-image: url('../../../src/assets/imgs/keys.jpg');
+}
+#reguliere_sleutels-img {
+    background-image: url('../../../src/assets/imgs/keys.jpg');
+}
+#autosleutels-img { 
+    background-image: url('../../../src/assets/imgs/keymaker.jpg');
+}
+#naamplaten-img { 
+    background-image: url('../../../src/assets/imgs/nameplates.jpg');
+}
+#voetzolen-img { 
+    background-image: url('../../../src/assets/imgs/workingspot.jpg');
+}
+#info-img { 
+    background-image: url('../../../src/assets/imgs/shopinside.jpg');
+}
+
+#home-img { 
+    transition: opacity 1s, background-size 1.35s;
+        -webkit-transition: opacity 1s, background-size 1.35s;
+        -o-transition: opacity 1s, background-size 1.55s;
+        -moz-transition: opacity 1s, background-size 1.35s;
+}
+#home-img.zoom-in,
+#home-img.fade-out { 
+    background-size: 275% 275%;
+    background-position: 48%, - 160px;
+}
+
+#werkplaats-img
+#onderhoud-sub-img,
+#onderhoud-img,
+#riemen-img,
+#sleutels-img,
+#reguliere_sleutels-img,
+#naamplaten-img,
+#voetzolen-img,
+#info-img { 
+    transition: opacity 1s;
+        -webkit-transition: opacity 1s;
+        -o-transition: opacity 1s;
+        -moz-transition: opacity 1s;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}

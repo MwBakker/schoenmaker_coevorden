@@ -1,0 +1,43 @@
+#henk { 
+    width: 85%;
+    margin: 30px 5%;
+    display: table;
+}
+
+#henk-intro { 
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#henk-img { 
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#henk-img img { 
+    width: 80%;
+    margin-left: 5%;
+}
+
+#history-imgs {
+    text-align: center;
+    overflow: hidden;
+}
+
+#history-imgs img { 
+    margin: 0 0.1%;
+    width: 47.5%;
+}
+
+
+@media screen and (min-width: 768px) {
+    #henk-img { 
+        width: 35%;
+    }
+    #henk-intro {
+        margin: 90px 0;
+    }
+    #history-imgs img {
+        width: 40%;
+    }
+}

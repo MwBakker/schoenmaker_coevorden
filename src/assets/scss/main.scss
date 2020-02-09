@@ -1,0 +1,23 @@
+@import "variables";
+@import "base/body";
+@import "base/app";
+
+
+// Big components
+
+@import "components/big/home";
+@import "components/big/nav";
+@import "components/big/workshop";
+@import "components/big/maintenance";
+@import "components/big/belts";
+@import "components/big/keys";
+@import "components/big/car_keys";
+@import "components/big/nameplates";
+@import "components/big/soles";
+@import "components/big/info";
+@import "components/big/maintainence_sub";
+
+// Small components 
+
+@import "components/small/hr";
+@import "components/small/main_img";
